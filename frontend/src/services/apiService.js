@@ -56,7 +56,7 @@ export const editProduct = (id, product) => {
 // Deletes a product by its ID
 export const removeProduct = async (id) => {
     try {
-        const response = await axios.delete(`${BASE_URL}/${id}`);
+        const response = await axios.delete(`${BASE_URL}/remove/${id}`);
         return response.data;
     } catch (error) {
         throw error; // Rethrow to allow caller to handle
